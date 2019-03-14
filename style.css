@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css?family=Changa|Julius+Sans+One|Passion+One|Shojumaru");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Changa", sans-serif;
+  text-align: center;
+}
+#navbar {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Passion One", cursive;
+}
+#navbar ul {
+  width: 50%;
+}
+#navbar ul li {
+  display: block;
+  width: 33.33%;
+  height: 100%;
+  padding-top: 12px;
+  border-radius: 5px;
+  float: left;
+  font-size: 1.7em;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+#navbar ul li a:hover {
+  color: brown;
+}
+#navbar ul li:hover {
+  background-color: black;
+}
+#welcome-section {
+  height: 100vh;
+  background: brown url("https://i.postimg.cc/KcVzycq2/web-design-2906159-1920.jpg") no-repeat center;
+  background-size: cover;
+  padding-top: 30vh;
+  font-weight: bold;
+  text-shadow: 1px -1px 1px brown;
+  border-bottom: 3px solid black;
+}
+#welcome-section h1 {
+  font-size: 45px;
+}
+#welcome-section p {
+  width: 50%;
+  margin: auto;
+  font-size: 22px;
+}
+.separator {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+#projects {
+  width: 100%;
+  height: auto;
+  background: url("https://i.postimg.cc/wT9zt0q0/construction-2682641-1920.jpg") no-repeat center;
+  background-size: cover;
+  padding: 15px 30px;
+}
+#projects h1 {
+  font-size: 45px;
+  text-shadow: 1px -1px 1px brown;
+}
+#projects .wrap-projects {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#projects .wrap-projects .project-tile {
+  background-color: rgba(0, 0, 0, 0.9);
+  text-decoration: none;
+  color: white;
+  border: 1px solid black;
+  width: 304px;
+  height: 209px;
+  box-shadow: 3px 3px 5px black, -3px -3px 5px black, 3px -3px 5px black, -3px 3px 5px black;
+  margin: 15px 15px 35px 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: 0.7s;
+  -moz-transition: 0.7s;
+}
+#projects .wrap-projects .project-tile img {
+  width: 290px;
+}
+#projects .wrap-projects .project-tile:hover {
+  box-shadow: none;
+}
+#projects .redirect {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+  text-shadow: 1px -1px 1px brown;
+}
+#contacts {
+  width: 100%;
+  height: 250px;
+  font-size: 45px;
+  text-shadow: 1px -1px 1px brown;
+  background: #9696fa url("https://i.postimg.cc/mDt6bmLV/business-card-427520-1920.png") no-repeat center top;
+}
+#contacts h1 {
+  margin-bottom: 25px;
+}
+#contacts a {
+  color: black;
+  margin: 10px;
+}
+footer {
+  background-color: black;
+  color: white;
+}
+footer a {
+  text-decoration: none;
+  color: brown;
+}
+@media only screen and (max-width: 750px) {
+  #projects .wrap-projects .project-tile {
+    width: 250px;
+    height: 180px;
+  }
+  #projects .wrap-projects .project-tile img {
+    width: 230px;
+  }
+}
+@media only screen and (max-width: 670px) {
+  #projects h1 {
+    font-size: 30px;
+  }
+  #projects .wrap-projects {
+    display: normal;
+  }
+  #projects .wrap-projects .project-tile {
+    width: 350px;
+    height: 230px;
+    margin: 30px auto;
+  }
+  #projects .wrap-projects .project-tile img {
+    width: 320px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #navbar {
+    height: 35px;
+  }
+  #navbar ul {
+    width: 100%;
+  }
+  #navbar ul li {
+    padding-top: 7px;
+    font-size: 20px;
+  }
+  #welcome-section {
+    padding-top: 20vh;
+  }
+  #welcome-section h1 {
+    font-size: 25px;
+  }
+  #welcome-section p {
+    width: 80%;
+    font-size: 15px;
+    text-align: justify;
+  }
+  #projects h1 {
+    font-size: 20px;
+  }
+  #projects .wrap-projects .project-tile {
+    width: 100%;
+    height: 180px;
+    margin: 7px;
+  }
+  #projects .wrap-projects .project-tile img {
+    width: inherit;
+  }
+  #projects .redirect {
+    font-size: 20px;
+  }
+  #contacts {
+    height: 150px;
+    background: #9696fa url("https://i.postimg.cc/mDt6bmLV/business-card-427520-1920.png") no-repeat left;
+  }
+  #contacts h1 {
+    font-size: 20px;
+  }
+  footer {
+    font-size: 15px;
+  }
+}
